@@ -2,13 +2,13 @@
 import java.time.LocalDate;
 
 public class Customer {
-	int id;
-	String firstName;
-	String lastName;
-	LocalDate dateOfBirth;
-	String nationalityId;
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String dateOfBirth;
+	private String nationalityId;
 	
-	public Customer(int id, String firstName, String lastName, LocalDate dateOfBirth, String nationalityId) {
+	public Customer(int id, String firstName, String lastName, String dateOfBirth, String nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -35,10 +35,10 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public LocalDate getDateOfBirth() {
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
-	public void setDateOfBirth(LocalDate dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 	public String getNationalityId() {
